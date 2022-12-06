@@ -88,7 +88,6 @@ class VacancyUpdateView(UpdateView):
             self.object.skills.add(skill_obj)
         self.object.save()
 
-
         return JsonResponse({
             "id": self.object.id,
             "slug": self.object.slug,
